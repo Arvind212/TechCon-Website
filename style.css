@@ -1,0 +1,437 @@
+/*Removes any margins from the screen and sets font*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* ---------------------------- Navigation Bar -------------------------- */
+
+/*contains the navigation menu and the logo*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    z-index: 999;
+}
+
+/*sets the background color and organises the body*/
+body {
+    width: 100%;
+    background: url(images/background-image.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*size of navigation bar*/
+.navbar {
+    width: 100%;
+    height: 75px;
+}
+
+/*the logo is fixed to the nav bar and design is created*/
+/*.logo {
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    height: 70px;
+}
+*/
+.logo {
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+/*list of buttons*/
+ul {
+    position: fixed;
+    right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*spacing between buttons*/
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+/*individual links in the navigation list*/
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+/*when you hover over a link in the navigation list*/
+ul li a:hover {
+    color: #ff7200;
+}
+
+/* ---------------------------- Home Page / Index -------------------------- */
+
+/*the Login button on the login form*/
+.btn {
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+/*when you hover over the login button*/
+.btn:hover {
+    color: #000;
+}
+
+/*image in the home page*/
+.index-img-1 {
+    float: left;
+    width: 499.2px;
+    height: 352.8px;
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+/*image in the home page*/
+.index-img-2 {
+    float: right;
+    width: 499.2px;
+    height: 352.8px;
+    margin-top: 80px;
+    margin-right: 20px;
+}
+
+/*the main contents of the page*/
+.content {
+    width: 100%;
+    height: 1300px;
+    color: #fff;
+}
+
+/*the paragraph underneath the heading*/
+.content .par {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    width: 80%;
+    padding-top: 25px;
+    text-align: center;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+/*the register button in the homepage*/
+.content .home-button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    display: block;
+}
+
+/*style of the heading "Welcome to"*/
+.content h1 {
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 10%;
+    letter-spacing: 2px;
+}
+
+/*headings of the sections, 'dates' and 'Venue'*/
+.content .par h2 {
+    margin-bottom: 20px;
+    font-size: 25pt;
+}
+
+/*style of the heading "TechCon 2023"*/
+.content span {
+    color: #ff7200;
+    font-size: 65px
+}
+
+/*Groups the venue and dates and keeps it center*/
+.content .further-details {
+    display: flex;
+    justify-content: center;
+}
+
+/*formats and splits the sections in half evenly*/
+.content .further-details .para {
+    width: 48%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    text-align: center;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+/* ---------------------------- Registration Page -------------------------- */
+
+/*style and format of the form that will be on display*/
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 450px;
+    background: black;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 40px;
+    transition: height .2s ease;
+    overflow: hidden;
+}
+
+/*when register form is on display, the height animation increases*/
+.form.active {
+    height: 500px;
+}
+
+/*style of the heading: "Log in"*/
+.form h2 {
+    width: 100%;
+    font-family: sans-serif;
+    color: white;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+/*style of the username and password inputs*/
+.form input {
+    align-items: center;
+    width: 350px;
+    height: 50px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+    display: block;
+}
+
+/*Allows a user to use the tab key to switch between inputs*/
+.form input:focus {
+    outline: none;
+}
+
+/*Adds the placeholders in the boxes*/
+::placeholder {
+    color: #fff;
+    font-family: Arial;
+}
+
+/*Style of the login button*/
+.btnn {
+    width: 350px;
+    height: 50px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+/*When you hover over the login button*/
+.btnn:hover {
+    background: #fff;
+    color: #ff7200;
+}
+
+/*Font style of the "Login" text in the button*/
+.btnn a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    display: block;
+    padding: 15px;
+}
+
+/*Style of the links that go to each form*/
+.form .register-link,
+.form .login-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-top: 40px;
+    text-align: center;
+    color: white;
+}
+
+/*font of register/login link*/
+.form .register-link a,
+.form .login-link a {
+    text-decoration: none;
+    color: #ff7200;
+}
+
+/*links underline when hovered over*/
+.form .register-link a:hover,
+.form .login-link a:hover {
+    text-decoration: underline;
+}
+
+/*animation 'slide' of the form going into view*/
+.form .login-form {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+/*moves the form out of view*/
+.form.active .login-form {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+/*moves the form out of view*/
+.form .register-form {
+    transition: none;
+    transform: translateX(100px);
+}
+
+/*animation 'slide' of the form going into view*/
+.form.active .register-form {
+    transition: transform .18s ease;
+    transform: translateX(-350px);
+}
+
+/* ---------------------------- Schedule Page -------------------------- */
+
+/*formats the drop down menu*/
+.content .drop-down-menu {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+/*formats the text inside the drop down menu*/
+.content .drop-down-menu #Filter {
+    font-size: 20px;
+}
+
+/*Formats the table*/
+table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/*styles the table headers and the table rows*/
+th,
+td {
+    text-align: left;
+    border: 2px solid transparent;
+    padding: 8px;
+    border-color: #ff7200;
+}
+
+/*Styles out the table headers*/
+th {
+    background-color: #ffa756;
+    color: black;
+    border-color: #ff7200;
+}
+
+/*Hides the other days when not in use*/
+.hidden {
+    display: none;
+}
+
+/*formats the table*/
+.tablessection {
+    color: white;
+    background: #211f1f;
+    background-size: auto;
+}
+
+/* ---------------------------- Contact Page -------------------------- */
+
+/*bold text which displays as orange*/
+.content .further-details .bold-text {
+    color: #ff7200;
+}
+
+/*------------------------------- Speaker Page ---------------------------*/
+
+.container {
+    max-width: 100%;
+    margin: 20px auto;
+    margin-top: 100px;
+}
+
+.speakers-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.speaker {
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.speaker:hover {
+    transform: scale(1.1);
+}
+
+.bio-container {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 80%;
+    padding-top: 25px;
+    text-align: center;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}

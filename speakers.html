@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<head>
+    <title>TechCon 2023 Speakers</title>
+    <!-- Links to css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- For Mobile Devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!----- Navigation Bar ----->
+    <header>
+        <div class="navbar">
+            <!-- Logo -->
+            <h2 class="logo">TechCon</h2>
+            <!--<img src="images/logo.png" class="logo">-->
+            <!-- Menu items -->
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="registration.html">REGISTRATION</a></li>
+                <li><a href="schedule.html">SCHEDULE</a></li>
+                <li><a href="speakers.html">SPEAKERS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+    <!----- Main contents ----->
+    <div class="content">
+        <h1>Speakers</h1>
+        <div class="container">
+            <!----- Displays the speakers in a row ----->
+            <div class="speakers-row" id="row1">
+                <div class="speaker" onclick="showBio('speaker1')">
+                    <img src="images/shadi-almassizadeh.jpg">
+                    <h2>Ahadi Almassizadeh</h2>
+                    <p>Walt Disney Studios</p>
+                </div>
+                <div class="speaker" onclick="showBio('speaker2')">
+                    <img src="images/Shannon-Baker-Davis.jpg">
+                    <h2>Shannon Baker Davis</h2>
+                    <p>ACE, AMPAS</p>
+                </div>
+                <div class="speaker" onclick="showBio('speaker3')">
+                    <img src="images/Mark-Arana.jpg">
+                    <h2>Mark Arana</h2>
+                    <p>Walt Disney Studios</p>
+                </div>
+                <div class="speaker" onclick="showBio('speaker4')">
+                    <img src="images/bill-baggelaar-2023.jpg">
+                    <h2>Bill Baggelaar</h2>
+                    <p>Sony Pictures Entertainment</p>
+                </div>
+            </div>
+
+            <!----- Bio containers contain speaker's profile ----->
+
+            <div class="bio-container" id="speaker1">
+                <h2>Ahadi Almassizadeh</h2>
+                <p>Walt Disney Studios</p>
+                <p>Experienced executive of 25+ years, with extensive experience designing, operating and supporting
+                    world-class motion picture <br>
+                    production infrastructure and services supporting unique production and post-production workflows.
+                    Prior experience and extensive <br>
+                    knowledge of film production and post-production pipelines and associated systems. Intimately
+                    familiar with large-scale data center <br>
+                    infrastructure as well as cloud environments</p>
+            </div>
+
+            <!----- Speaker 2's bio profile ----->
+            <div class="bio-container" id="speaker2">
+                <h2>Shannon Baker Davis</h2>
+                <p>ACE, AMPAS</p>
+                <p>Shannon Baker Davis is an award-winning television and film editor. After 10 years editing unscripted
+                    series, like iconic shows, <br>
+                    Project Runway and Top Chef, Shannon jumped to scripted television and features. She has edited
+                    projects such as Grown-ish, <br>
+                    Queen Sugar, The Photograph, The Obituary of Tunde Johnson, #blackaf, and Impeachment: American
+                    Crime Story. Her latest <br>
+                    projects include Kindred (FX/Hulu), From Scratch (Netflix), and she is currently editing a Marvel
+                    series (Disney+). Shannon is also an <br>
+                    emerging writer/producer, having written webseries (Colored People), pilots (Alkebulan), and
+                    features, all of which have earned <br>
+                    laurels at various festivals and screenwriting competitions.</p>
+            </div>
+
+            <!----- Speaker 3's bio profile ----->
+            <div class="bio-container" id="speaker3">
+                <h2>Mark Arana</h2>
+                <p>Walt Disney Studios</p>
+                <p>Mark Arana is the Vice President of Technology at The Walt Disney Studios. In this role, he leads a
+                    team of technologists charged <br>
+                    with understanding the digital horizon; experimenting with emerging technologies to help shape new
+                    ways consumers will <br>
+                    experience movies from the theatrical environment all the way to the home. This encompasses many
+                    areas such as distribution <br>
+                    platforms including cinema, digital first, broadcast and other emerging platforms.</p>
+            </div>
+
+            <!----- Speaker 4's bio profile ----->
+            <div class="bio-container" id="speaker4">
+                <h2>Bill Baggelaar</h2>
+                <p>Sony Pictures Entertainment</p>
+                <p>Bill Baggelaar is the Executive Vice President and Chief Technology Officer at Sony Pictures
+                    Entertainment. He is responsible for the <br>
+                    media technology strategy, along with research & development efforts into emerging technologies that
+                    will shape the future of <br>
+                    cloud-based production, post-production and delivery of content.
+                    <br>
+                    Bill brings his extensive experience in production, visual effects and post-production along with
+                    his work collaborating with industry <br>
+                    partners and internally across Sony in developing and implementing key technologies that have been
+                    instrumental, including IMF, 4K <br>
+                    and HDR.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Links to javascript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>

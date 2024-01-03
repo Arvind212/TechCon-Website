@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<head>
+    <title>TechCon 2023 Schedule</title>
+    <!-- links to css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- For Mobile Devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!----- Navigation Bar ----->
+    <header>
+        <div class="navbar">
+            <!-- Logo -->
+            <h2 class="logo">TechCon</h2>
+            <!--<img src="images/logo.png" class="logo">-->
+            <!-- Menu items -->
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="registration.html">REGISTRATION</a></li>
+                <li><a href="schedule.html">SCHEDULE</a></li>
+                <li><a href="speakers.html">SPEAKERS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+    <!----- Main contents ----->
+    <div class="content">
+        <!-- Drop Down Menu -->
+        <h1 style="margin-top: 100px;">Schedule</h1>
+        <div class="drop-down-menu">
+            <label for="Filter">Filter by Day:</label>
+            <select id="Filter" onchange="showSchedule(this.value)">
+                <!-- Filters the table by these days -->
+                <!-- Items in the drop down menu -->
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+            </select>
+        </div>
+
+        <!-- Table which holds the contents of the schedule -->
+        <table id="Monday" class="schedule">
+            <tr>
+                <th>Time</th>
+                <th>Events</th>
+                <th>Speakers</th>
+            </tr>
+            <tr>
+                <td>9:00 AM - 10:00 AM</td>
+                <td>Registration Opens</td>
+                <td>Registration Team</td>
+            </tr>
+            <tr>
+                <td>10:00 AM - 11:00 AM</td>
+                <td>Keynote Speeches</td>
+                <td>Keynote Speaker</td>
+            </tr>
+            <tr>
+                <td>11:00 AM - 12:00 PM</td>
+                <td>Panel Discussion: Industry Trends</td>
+                <td>Panelists</td>
+            </tr>
+            <tr>
+                <td>12:00 PM - 1:00 PM</td>
+                <td>Lunch Break</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1:00 PM - 2:00 PM</td>
+                <td>Workshop: Team bonding exercises</td>
+                <td>Facilitator</td>
+            </tr>
+            <tr>
+                <td>2:00 PM - 3:00 PM</td>
+                <td>Networking Session</td>
+                <td>Attendees</td>
+            </tr>
+            <tr>
+                <td>3:00 PM - 4:00 PM</td>
+                <td>Guest Speaker Presentation</td>
+                <td>Guest Speaker</td>
+            </tr>
+            <tr>
+                <td>4:00 PM - 5:00 PM</td>
+                <td>Closing Remarks and Q&A</td>
+                <td>Event Organizer</td>
+            </tr>
+        </table>
+
+        <table id="Tuesday" class="schedule hidden">
+            <tr>
+                <th>Time</th>
+                <th>Events</th>
+                <th>Speakers</th>
+            </tr>
+            <tr>
+                <td>9:30 AM - 10:30 AM</td>
+                <td>Registration and Breakfast</td>
+                <td>Registration Team</td>
+            </tr>
+            <tr>
+                <td>10:30 AM - 11:30 AM</td>
+                <td>Keynote Address: Innovation in Technology</td>
+                <td>Keynote Speaker</td>
+            </tr>
+            <tr>
+                <td>11:30 AM - 12:30 PM</td>
+                <td>Panel Discussion: Future Trends in Tech</td>
+                <td>Panelists</td>
+            </tr>
+            <tr>
+                <td>12:30 PM - 1:30 PM</td>
+                <td>Lunch Break</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1:30 PM - 2:30 PM</td>
+                <td>Hackathon</td>
+                <td>Event Team</td>
+            </tr>
+            <tr>
+                <td>2:30 PM - 3:30 PM</td>
+                <td>Interactive Tech Showcase</td>
+                <td>Exhibitors</td>
+            </tr>
+            <tr>
+                <td>3:30 PM - 4:30 PM</td>
+                <td>Guest Speaker Presentation</td>
+                <td>Guest Speaker</td>
+            </tr>
+            <tr>
+                <td>4:30 PM - 5:30 PM</td>
+                <td>Closing Ceremony and Awards</td>
+                <td>Event Organizer</td>
+            </tr>
+        </table>
+
+        <table id="Wednesday" class="schedule hidden">
+            <tr>
+                <th>Time</th>
+                <th>Events</th>
+                <th>Speakers</th>
+            </tr>
+            <tr>
+                <td>9:00 AM - 10:00 AM</td>
+                <td>Registration Opens</td>
+                <td>Registration Team</td>
+            </tr>
+            <tr>
+                <td>10:00 AM - 11:00 AM</td>
+                <td>Opening Keynote: Future of Technology</td>
+                <td>Keynote Speaker</td>
+            </tr>
+            <tr>
+                <td>11:00 AM - 12:00 PM</td>
+                <td>Panel Discussion: Innovations in Science</td>
+                <td>Panelists</td>
+            </tr>
+            <tr>
+                <td>12:00 PM - 1:00 PM</td>
+                <td>Lunch and Networking</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1:00 PM - 2:00 PM</td>
+                <td>Workshop: Future Tech Trends</td>
+                <td>Facilitator: W</td>
+            </tr>
+            <tr>
+                <td>2:00 PM - 3:00 PM</td>
+                <td>Tech Showcase and Demos</td>
+                <td>Exhibitors</td>
+            </tr>
+            <tr>
+                <td>3:00 PM - 4:00 PM</td>
+                <td>Special Presentation on AI</td>
+                <td>AI Expert</td>
+            </tr>
+            <tr>
+                <td>4:00 PM - 5:00 PM</td>
+                <td>Closing Ceremony and Awards</td>
+                <td>Event Organizer</td>
+            </tr>
+        </table>
+
+        <table id="Thursday" class="schedule hidden">
+            <tr>
+                <th>Time</th>
+                <th>Events</th>
+                <th>Speakers</th>
+            </tr>
+            <tr>
+                <td>9:00 AM - 10:00 AM</td>
+                <td>Registration and Coffee</td>
+                <td>Registration Team</td>
+            </tr>
+            <tr>
+                <td>10:00 AM - 11:00 AM</td>
+                <td>Morning Keynote: Innovations in Science</td>
+                <td>Keynote Speaker: Dr. X</td>
+            </tr>
+            <tr>
+                <td>11:00 AM - 12:00 PM</td>
+                <td>Interactive Workshop: Future Technologies</td>
+                <td>Facilitator: Tech Guru Y</td>
+            </tr>
+            <tr>
+                <td>12:00 PM - 1:00 PM</td>
+                <td>Lunch Buffet</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2:00 PM - 3:00 PM</td>
+                <td>Networking Break</td>
+                <td>Attendees</td>
+            </tr>
+            <tr>
+                <td>3:00 PM - 4:00 PM</td>
+                <td>Specialized Workshop: Quantum Computing</td>
+                <td>Expert: Dr. Q</td>
+            </tr>
+            <tr>
+                <td>4:00 PM - 5:00 PM</td>
+                <td>Closing Ceremony and Awards</td>
+                <td>Event Host</td>
+            </tr>
+        </table>
+
+        <table id="Friday" class="schedule hidden">
+            <tr>
+                <th>Time</th>
+                <th>Events</th>
+                <th>Speakers</th>
+            </tr>
+            <tr>
+                <td>9:00 AM - 10:00 AM</td>
+                <td>Registration Opens</td>
+                <td>Registration Team</td>
+            </tr>
+            <tr>
+                <td>10:00 AM - 11:00 AM</td>
+                <td>Morning Keynote: Future Innovations</td>
+                <td>Expert Speaker</td>
+            </tr>
+            <tr>
+                <td>11:00 AM - 12:00 PM</td>
+                <td>Interactive Workshops</td>
+                <td>Various Facilitators</td>
+            </tr>
+            <tr>
+                <td>12:00 PM - 1:00 PM</td>
+                <td>Lunch Buffet and Networking</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1:00 PM - 2:00 PM</td>
+                <td>Panel Discussion: Future of Technology</td>
+                <td>Panelists</td>
+            </tr>
+            <tr>
+                <td>2:00 PM - 3:00 PM</td>
+                <td>Tech Demos and Exhibitions</td>
+                <td>Exhibitors</td>
+            </tr>
+            <tr>
+                <td>3:00 PM - 4:00 PM</td>
+                <td>Guest Speaker Session: Innovations in AI</td>
+                <td>AI Expert</td>
+            </tr>
+            <tr>
+                <td>4:00 PM - 5:00 PM</td>
+                <td>Closing Ceremony and Awards</td>
+                <td>Event Organizer</td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

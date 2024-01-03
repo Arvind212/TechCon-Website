@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <title>TechCon 2023 Registration</title>
+    <!-- Links to CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- For Mobile Devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!----- Navigation Bar ----->
+    <header>
+        <div class="navbar">
+            <!-- Logo -->
+            <h2 class="logo">TechCon</h2>
+            <!--<img src="images/logo.png" class="logo">-->
+            <!-- Menu Items -->
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="registration.html">REGISTRATION</a></li>
+                <li><a href="schedule.html">SCHEDULE</a></li>
+                <li><a href="speakers.html">SPEAKERS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+    <!----- Main Contents ----->
+    <!-- Registration Form -->
+    <div class="form">
+        <!-- Login -->
+        <form class="login-form">
+            <h2>Login</h2>
+            <!-- inputs for the form -->
+            <input type="email" name="email" id="l-email" placeholder="Enter your Email Address">
+            <input type="password" name="password" id="l-password" placeholder="Enter your Password">
+            <!-- When button clicked, function in javascript file runs -->
+            <button class="btnn" type="submit" onclick="validate_login()"><a href="#">Login</button></a>
+            <p class="register-link">Don't have an account?<br>
+                <a href="#">Register</a>
+            </p>
+        </form>
+        <!-- Register -->
+        <form class="register-form">
+            <h2>Register</h2>
+            <!-- inputs for the form -->
+            <input type="text" name="fullname" id="r-fullname" placeholder="Enter your Full Name">
+            <input type="email" name="email" id="r-email" placeholder="Enter your Email address">
+            <input type="password" name="password" id="r-password" placeholder="Enter a Password">
+            <!-- When button clicked, function in javascript file runs -->
+            <button class="btnn" type="submit" onclick="validate_register()"><a href="#">Register</button></a>
+            <p class="login-link">Already have an account?<br>
+                <a href="#">Login</a>
+            </p>
+        </form>
+    </div>
+    <!-- Links to javascript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
